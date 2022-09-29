@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    width: 80vw;
+    height: 100%;
+    margin: auto;
+}
+//
+// Shootings stars container starts here
+//
+.star {
+    display: flex;
+    height: 251px;
+    width: 1037px;
+    min-height: 100%;
+    margin-top: 9.5vh;
+    padding: 0;
+
+&__items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+&__headline {
+    font-family: $m-font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.423077px;
+    margin: 0 0 32px 0;
+    padding: 0;
+}
+
+&__smalltxt {
+    align-self: flex-end;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: auto;
+}
+
+&__bigtxt {
+    flex-grow: 1;
+    font-family: $m-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    width: 635px;
+    margin: 0;
+    padding: 0;
+}
+}
+
+// 
+//  Gallery Grid a Grid Container for Pictures inside of a already made flex container?
+//
