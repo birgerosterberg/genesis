@@ -1,5 +1,7 @@
 main {
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     width: 80vw;
     height: 100%;
     margin: auto;
@@ -8,17 +10,16 @@ main {
 // Shootings stars container starts here
 //
 .star {
+    box-sizing: border-box;
     display: flex;
-    height: 251px;
-    width: 1037px;
+    width: 90%;
     min-height: 100%;
     margin-top: 9.5vh;
     padding: 0;
 
 &__items {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
     width: 100%;
 }
 
@@ -32,28 +33,87 @@ main {
     padding: 0;
 }
 
-&__smalltxt {
-    align-self: flex-end;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    margin-top: auto;
-}
-
 &__bigtxt {
-    flex-grow: 1;
     font-family: $m-font;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
-    width: 635px;
+    width: 70vh;
     margin: 0;
     padding: 0;
 }
+&__quote {
+    display: flex;
+    justify-content: flex-end;
 }
-
+&__smalltxt {
+    font-style: italic;
+    font-family: $m-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+}
+}
+.coloredtxt {
+    color: #4A4FF2;
+}
 // 
 //  Gallery Grid a Grid Container for Pictures inside of a already made flex container?
 //
+.gallery {
+    display: flex;
+    margin-top: 9.5vh;
+
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(31, 0.1fr);
+        gap: 1%;
+    }
+    &__item {
+        min-height: 100%;
+        max-width: 100%;
+        width: 80vw;
+        height: 100%;
+        object-fit: cover;
+        &:nth-child(1) {
+            grid-area: 1 / 1 / 8 / 4;
+        }        
+        &:nth-child(2) {
+            grid-area: 1 / 4 / 7 / 7;
+        }        
+        &:nth-child(3) {
+            grid-area: 1 / 7 / 11 / -1;
+        }        
+        &:nth-child(4) {
+            grid-area: 8 / 1 / 16 / 4; 
+        }        
+        &:nth-child(5) {
+            grid-area: 7 / 4 / 14 / 7;
+        }        
+        &:nth-child(6) {
+            grid-area: 11 / 7 / 19 / -1;
+        }        
+        &:nth-child(7) {
+            grid-area: 16 / 1 / 23 / 4;
+        }        
+        &:nth-child(8) {
+            grid-area: 14 / 4 / 22 / 7;
+        }        
+        &:nth-child(9) {
+            grid-area: 19 / 7 / 27 / -1;
+        }        
+        &:nth-child(10) {
+            grid-area: 23 / 1 / 32 / 4;
+        }        
+        &:nth-child(11) {
+            grid-area: 22 / 4 / 32 / 7;
+        }        
+        &:nth-child(12) {
+            grid-area: 27 / 7 / 32 / -1;
+        }
+    }
+}
