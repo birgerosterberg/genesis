@@ -1,0 +1,39 @@
+$m-txt-clr: 'black';
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+}
+.foot {
+    display: flex;
+    color: $m-txt-clr;
+    font-family: $m-font;
+    justify-content: flex-start;
+    &__items {
+        display: flex;
+        gap: 29px;
+    }
+    &__lists {
+        display: flex;
+        list-style: none;
+        color: $m-txt-clr;
+        a {
+            color: $m-txt-clr;
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
+            color: $m-txt-clr;
+            opacity: 0.9;
+        }
+        &:nth-child(2){
+            margin-right: 95px;
+        }
+    }
+}

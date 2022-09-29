@@ -1,0 +1,35 @@
+$m-txt-clr: 'black';
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+}
+.logo {
+    opacity: 1;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+.nav {
+    color: black;
+    font-family: $m-font;
+    &__items {
+        display: flex;
+        gap: 29px;
+    }
+    &__lists {
+        list-style: none;
+        color: $m-txt-clr;
+        a {
+            color: $m-txt-clr;
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
