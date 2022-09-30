@@ -54,6 +54,12 @@ main {
     font-size: 18px;
     line-height: 23px;
     margin: 0;
+    opacity: 0.6;
+    &__line {
+        letter-spacing: -1px;
+        font-weight: 700;
+        opacity: 0.6;
+    }
 }
 }
 .coloredtxt {
@@ -128,12 +134,10 @@ main {
     height: 100%;
     width: 100%;
     margin-top: 8vh;
+    margin-bottom: 8vh;
     font-family: $m-font;
     color: $m-txt-clr;
-        p {
-            margin: 0;
-            padding: 0;
-        }
+
     &__txt {
 
         &:nth-child(1) {
@@ -155,6 +159,7 @@ main {
             font-size: 18px;
             line-height: 23px;
             opacity: 0.6;
+
         }
     }
 }
@@ -162,3 +167,131 @@ main {
 //
 // Styles of Award Section
 //
+.opa--txt {
+    opacity: 0.6;
+}
+.awards {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 100vw;
+    width: 100%;
+    font-family: $m-font;
+    color: $m-txt-clr;
+    margin-bottom: 9vh;
+    &__table__one {
+        border: #D8D8D8;
+        border-style: solid;
+        border-width: 1px;
+        border-left: 0; border-right: 0; border-bottom: 0;
+        display: grid;
+        grid-template-columns:repeat(12,1fr);
+        grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr;
+        &__items {
+            margin-bottom: 10px;
+            &:nth-child(1) {
+                grid-area: 2 / 1 / 3 / 3;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 28px;
+            }
+            &:nth-child(2) {
+                grid-area: 2 / 6 / 3 / 8;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            &:nth-child(3) {
+                grid-area: 2 / 9 / 3 / 11;
+                text-align: start; 
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            &:nth-child(4) {
+                grid-area: 2 / 12 / 3 / 13;
+                text-align: end;
+            }
+            &:nth-child(5) {
+                grid-area: 4 / 6 / 5 / 8;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            &:nth-child(6) {
+                grid-area: 4 / 9 / 5 / 11;
+                text-align: start; 
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            &:nth-child(7) {
+                grid-area: 4 / 12 / 5 / 13;
+                text-align: end;
+            }
+        }
+    }
+    &__table__two {
+        display: grid;
+        grid-template-columns:repeat(12,1fr);
+        grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr;
+        border: #D8D8D8;
+        border-style: solid;
+        border-width: 1px;
+        border-left: 0; border-right: 0;
+        &__items {
+            margin-bottom: 10px;
+            &:nth-child(1) {
+                grid-area: 2 / 1 / 3 / 3;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 28px;
+            }
+            &:nth-child(2) {
+                grid-area: 2 / 6 / 3 / 8;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            &:nth-child(3) {
+                grid-area: 2 / 9 / 3 / 11;
+                text-align: start; 
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            &:nth-child(4) {
+                grid-area: 2 / 12 / 3 / 13;
+                text-align: end;
+            }
+            &:nth-child(5) {
+                grid-area: 4 / 6 / 5 / 8;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            &:nth-child(6) {
+                grid-area: 4 / 9 / 5 / 11;
+                text-align: start; 
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            &:nth-child(7) {
+                grid-area: 4 / 12 / 5 / 13;
+                text-align: end;
+            }
+        }    
+    }   
+}
