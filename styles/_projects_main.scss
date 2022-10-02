@@ -1,3 +1,7 @@
+//
+// The scss main section of the projects.html
+//
+
 main {
     box-sizing: border-box;
     display: flex;
@@ -62,16 +66,10 @@ main {
     }
 }
 // Add more sass variables for the text formating !?!? Time time time..... Wasted saved?!
-.styled--p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    opacity: 0.8;
-}
+
 .girl__image {
     display: flex;
     margin-top: 4vh;
-    margin-bottom: 3vh;
     width: 100%;
     max-width: 80vw;
     img {
@@ -79,6 +77,14 @@ main {
         object-fit: fill;
         flex-shrink: 0;
     }
+}
+.styled--p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.8;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
 }
 .three__images {
     display: flex;
