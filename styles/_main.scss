@@ -8,17 +8,18 @@ main {
 }
 //
 // Shootings stars container starts here Column reverse to make sure the Quote gets in right spot!
+// Would love to hear a better solution since this aint responsive at all!
 //
 .star {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 90%;
     height: 100%;
     max-height: 300px;
-    margin-top: 9.5vh;
+    margin-top: 19.5vh;
     padding: 0;
 
 &__headline {
@@ -53,6 +54,7 @@ main {
     line-height: 23px;
     margin: 0;
     opacity: 0.6;
+    align-self: flex-end;
     // Letterspacing in _ to make sure the _ _ _ above the quote is a filled line ___ .
     &__line {
         letter-spacing: -1px;
@@ -65,7 +67,7 @@ main {
     color: #4A4FF2;
 }
 // 
-//  Gallery Grid.. Dont need the .gallery class?!
+//  Gallery Grid.. revamped, gap i % due to not being even gap in Figma letting the computer do its magic!
 //
 
 .gallery {
@@ -74,13 +76,14 @@ main {
         grid-template-rows: repeat(31, 0.1fr);
         gap: 1%;
         margin-top: 9.5vh;
-
+// Trial and error until broken brain, will try and figure out what does what if time exist this evening.
     &__item {
         min-height: 100%;
         max-width: 100%;
         width: 100vw;
         height: 100%;
         object-fit: cover;
+
         &:nth-child(1) {
             grid-area: 1 / 1 / 8 / 4;
         }        
@@ -161,7 +164,7 @@ main {
 }
 
 //
-// Styles of Award Section
+// Styles of Award Section - Rough grid layout to place things rightly.. Might have worked smoother with table?! But not responsive?
 //
 .opa--txt {
     opacity: 0.6;
@@ -176,6 +179,7 @@ main {
     font-family: $m-font;
     color: $m-txt-clr;
     margin-bottom: 9vh;
+    
     &__table__one {
         display: grid;
         grid-template-columns:repeat(12,1fr);
@@ -183,7 +187,10 @@ main {
         border: #D8D8D8;
         border-style: solid;
         border-width: 1px;
-        border-left: 0; border-right: 0; border-bottom: 0;
+        border-left: 0; 
+        border-right: 0; 
+        border-bottom: 0;
+
         &__items {
             margin-bottom: 10px;
             &:nth-child(1) {
@@ -233,6 +240,7 @@ main {
             }
         }
     }
+
     &__table__two {
         display: grid;
         grid-template-columns:repeat(12,1fr);
@@ -241,6 +249,7 @@ main {
         border-style: solid;
         border-width: 1px;
         border-left: 0; border-right: 0;
+
         &__items {
             margin-bottom: 10px;
             &:nth-child(1) {
